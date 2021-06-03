@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>PRODUCT REPOSITORY</title>
+    <link rel="stylesheet" href="../static/style.css" th:href="@{/style.css}">
+</head>
+<body>
+
+<div class="form">
+    <form action="#" th:action="@{/list}" th:object="${product}" method="get">
+    <p><select name="select" size="4" multiple>
+            <option selected value="s1">Молоко</option>
+            <option value="s2">Сметана</option>
+            <option value="s3">Хлеб</option>
+            <option value="s4">Сыр</option>
+        </select>
+            <input type="submit" value="Отправить"></p>
+    </form>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title> ADD PRODUCT LIST</title>
+  <link rel="stylesheet" href="../static/style.css" th:href="@{/style.css}">
+</head>
+<body>
+<!--<div class="container">-->
+<!--  <div class="outer header">-->
+<!--    <div class="inner">id</div>-->
+<!--    <div class="inner item">name</div>-->
+<!--    <div class="inner item">cost</div>-->
+<!--    <div class="inner">del</div>-->
+<!--  </div>-->
+  <!--    <div class="outer" th:each="product: ${products}">-->
+  <!--  <div class="inner" th:text="${product.id}">id</div>-->
+  <!--  <div class="inner" th:text="${product.name}">name</div>-->
+  <!--  <div class="inner" th:text="${product.cost}">cost</div>-->
+
+</div>
+<div class="form">
+  <form action="#" th:action="@{/product/add}" th:object="${product}" method="post">
+    name: <input type="text" size="10" value="name" th:field="*{name}"/>
+    cost: <input type="text" size="2" value="cost" th:field="*{cost}"/>
+    <input type="submit" value="add">
+  </form>
+</div>
+<!--<div class="form">-->
+
+<!--  <form action="#" th:action="@{/product/list}" th:object="${product}" method="get">-->
+<!--    id: <input type="text" size="1" value="id" th:field="*{id}"/>-->
+<!--    name: <input type="text" size="10" value="name" th:field="*{name}"/>-->
+<!--    cost: <input type="text" size="2" value="cost" th:field="*{cost}"/>-->
+
+<!--  </form>-->
+<!--</div>-->
+</div>
+</body>
+</html>
